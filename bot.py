@@ -30,5 +30,4 @@ def Ciclo():
         time.sleep(esperar)
         Rodar()
         
-        
 Ciclo()
