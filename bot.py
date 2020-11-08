@@ -14,7 +14,7 @@ auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
 #ola mundo
-print(iniciou a nova versao)
+print("iniciou a nova versao")
 
 def Rodar():
     pesquisa = "\"bom dia\"" + " -filter:retweets"
