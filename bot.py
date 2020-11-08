@@ -22,13 +22,15 @@ def Rodar():
         api.retweet(i.id)
     
 def Ciclo():
+    h=time.localtime().tm_hour
+    m=time.localtime().tm_min
+    s=time.localtime().tm_sec
+    s=s+(m*60)+(h*3600)
+    time.sleep(21600-s)
     while True:
-        h=time.localtime().tm_hour
-        m=time.localtime().tm_min
-        s=time.localtime().tm_sec
-        s=s+(m*60)+(h*3600)
-        esperar=(randrange(21600)+(86400 - s)+21600)
-        time.sleep(esperar)
+        x = randrange(21600)
+        time.sleep(x)
         Rodar()
+        time.sleep(21600-x)
         
 Ciclo()
