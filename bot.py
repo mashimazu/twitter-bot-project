@@ -14,6 +14,7 @@ auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
 #ola mundo
+print(iniciou a nova versao)
 
 def Rodar():
     pesquisa = "\"bom dia\"" + " -filter:retweets"
@@ -22,11 +23,6 @@ def Rodar():
         api.retweet(i.id)
     
 def Ciclo():
-    h=time.localtime().tm_hour
-    m=time.localtime().tm_min
-    s=time.localtime().tm_sec
-    s=s+(m*60)+(h*3600)
-    time.sleep(21600-s)
     while True:
         x = randrange(21600)
         time.sleep(x)
