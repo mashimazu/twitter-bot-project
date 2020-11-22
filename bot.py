@@ -17,7 +17,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 print("iniciou a nova versao")
 
 def Rodar():
-    pesquisa = "\"bom dia\"" + " -filter:retweets"
+    pesquisa = "\"minha opiniao\"" + " -filter:retweets"
     results = api.search(q=pesquisa,count=1)
     for i in results:
         api.retweet(i.id)
